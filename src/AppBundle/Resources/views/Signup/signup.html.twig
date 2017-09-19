@@ -2,19 +2,19 @@
 <html>
 <head>
     <title>Partner werden</title>
-    <link href="signup.css" style="text/css" rel="stylesheet">
+    <link href="{{ asset('css/signup.css') }}" type="text/css" rel="stylesheet">
 </head>
 <body>
 <div class="header">
-    <a href="index.html">
-        <img src="./web/Bild1.png" height="150" width="225">
+    <a href="{{ path('homepage') }}">
+        <img src="{{ asset('images/Bild1.png') }}" height="150" width="225">
     </a>
     <div class="navBar">
-        <a href="index.html">Home</a>
-        <a href="anbieter.html">Anbieter</a>
-        <a href="leistungen.html">Zusatzleistungen</a>
-        <a class="active" href="signup.html">Partner werden</a>
-        <a href="index.html#anchor">Kontakt</a>
+        <a href="{{ path('homepage') }}">Home</a>
+        <a href="{{ path('partners') }}">Anbieter</a>
+        <a href="{{ path('services') }}">Zusatzleistungen</a>
+        <a class="active" href="{{ path('signup') }}">Partner werden</a>
+        <a href="{{ path('homepage') }}#anchor">Kontakt</a>
     </div>
 </div>
 <div class="textbox2">

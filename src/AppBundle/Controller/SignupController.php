@@ -8,13 +8,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class SignupController extends Controller
 {
     /**
-     * @Route("/signup")
+     * @Route("/signup", name="signup")
      */
     public function signupAction()
     {
-        return $this->render('AppBundle:Signup:signup.html.twig', array(
-            // ...
-        ));
+        return $this->render('AppBundle:Signup:signup.html.twig');
     }
 
 }

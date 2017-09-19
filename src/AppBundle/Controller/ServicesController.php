@@ -8,13 +8,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class ServicesController extends Controller
 {
     /**
-     * @Route("/services")
+     * @Route("/services", name="services")
      */
     public function servicesAction()
     {
-        return $this->render('AppBundle:Services:services.html.twig', array(
-            // ...
-        ));
+        return $this->render('AppBundle:Services:services.html.twig');
     }
 
 }

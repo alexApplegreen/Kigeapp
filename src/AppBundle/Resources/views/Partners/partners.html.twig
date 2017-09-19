@@ -2,19 +2,19 @@
 <html>
 <head>
     <title>Anbieter</title>
-    <link href="anbieter.css" type="text/css" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" type="text/css" rel="stylesheet">
 </head>
 <body>
 <div class="header">
-    <a href="index.html">
-        <img src="./web/Bild1.png" height="150" width="225">
+    <a href="{{ path('homepage') }}">
+        <img src="{{ asset('images/Bild1.png') }}" height="150" width="225">
     </a>
     <div class="navBar">
-        <a href="index.html">Home</a>
-        <a class="active" href="anbieter.html">Anbieter</a>
-        <a href="leistungen.html">Zusatzleistungen</a>
-        <a href="signup.html">Partner werden</a>
-        <a href="index.html#anchor">Kontakt</a>
+        <a href="{{ path('homepage') }}">Home</a>
+        <a class="active" href="{{ path('partners') }}">Anbieter</a>
+        <a href="{{ path('services') }}">Zusatzleistungen</a>
+        <a href="{{ path('signup') }}">Partner werden</a>
+        <a href="{{ path('homepage') }}#anchor">Kontakt</a>
     </div>
 </div>
 <div class="beschreibung">
@@ -29,7 +29,7 @@
     <h1>Anbieter</h1>
     <a href="nettebad.html">
         <div class="nettebad">
-            <img src="./web/nettebad1.jpg" height="200">
+            <img src="{{ asset('images/nettebad1.jpg') }}" height="200">
             <span class="caption">
 					<h3>Nettebad</h3>
 				</span>
@@ -37,7 +37,7 @@
     </a>
     <a href="bauerhorst.html">
         <div class="bauerhorst">
-            <img src="./web/bauerhorst2.jpg" height="200">
+            <img src="{{ asset('images/bauerhorst2.jpg') }}" height="200">
             <span class="caption">
 					<h3>Bauer Horst</h3>
 				</span>

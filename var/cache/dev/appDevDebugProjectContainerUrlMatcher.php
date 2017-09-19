@@ -117,24 +117,24 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
         }
 
-        // app_home_index
+        // homepage1
         if ('/index' === $pathinfo) {
-            return array (  '_controller' => 'AppBundle\\Controller\\HomeController::indexAction',  '_route' => 'app_home_index',);
+            return array (  '_controller' => 'AppBundle\\Controller\\HomeController::indexAction',  '_route' => 'homepage1',);
         }
 
-        // app_partners_partners
+        // partners
         if ('/partners' === $pathinfo) {
-            return array (  '_controller' => 'AppBundle\\Controller\\PartnersController::partnersAction',  '_route' => 'app_partners_partners',);
+            return array (  '_controller' => 'AppBundle\\Controller\\PartnersController::partnersAction',  '_route' => 'partners',);
         }
 
-        // app_services_services
+        // services
         if ('/services' === $pathinfo) {
-            return array (  '_controller' => 'AppBundle\\Controller\\ServicesController::servicesAction',  '_route' => 'app_services_services',);
+            return array (  '_controller' => 'AppBundle\\Controller\\ServicesController::servicesAction',  '_route' => 'services',);
         }
 
-        // app_signup_signup
+        // signup
         if ('/signup' === $pathinfo) {
-            return array (  '_controller' => 'AppBundle\\Controller\\SignupController::signupAction',  '_route' => 'app_signup_signup',);
+            return array (  '_controller' => 'AppBundle\\Controller\\SignupController::signupAction',  '_route' => 'signup',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
