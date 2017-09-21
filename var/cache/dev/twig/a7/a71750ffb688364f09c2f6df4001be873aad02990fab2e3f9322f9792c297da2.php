@@ -15,30 +15,54 @@ class __TwigTemplate_6c857b5657ed7b9320e7a7a8c2b864d7fd0992dc8e8e1adfb0d5587615c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_33ea76e746664c6693b9c497e00639cff2685ced963f65f2d1a8b2bb3ffe304a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_33ea76e746664c6693b9c497e00639cff2685ced963f65f2d1a8b2bb3ffe304a->enter($__internal_33ea76e746664c6693b9c497e00639cff2685ced963f65f2d1a8b2bb3ffe304a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle:Partners:partners.html.twig"));
+        $__internal_8e5b2319a3d5e3b9fc8ff6888c8f879eb8b11981bea7add1a40ca557bc95dbf7 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8e5b2319a3d5e3b9fc8ff6888c8f879eb8b11981bea7add1a40ca557bc95dbf7->enter($__internal_8e5b2319a3d5e3b9fc8ff6888c8f879eb8b11981bea7add1a40ca557bc95dbf7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle:Partners:partners.html.twig"));
 
-        $__internal_416a33f26f4aa26b3bf554f6e87d498f16f0c33d7236a625acc54089234001da = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_416a33f26f4aa26b3bf554f6e87d498f16f0c33d7236a625acc54089234001da->enter($__internal_416a33f26f4aa26b3bf554f6e87d498f16f0c33d7236a625acc54089234001da_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle:Partners:partners.html.twig"));
+        $__internal_fe9eb496b96940897b39ba5831ffddf527b94dc0aed8f9193df5b56e7b5fe91e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fe9eb496b96940897b39ba5831ffddf527b94dc0aed8f9193df5b56e7b5fe91e->enter($__internal_fe9eb496b96940897b39ba5831ffddf527b94dc0aed8f9193df5b56e7b5fe91e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle:Partners:partners.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
 <html>
 <head>
     <title>Anbieter</title>
-    <link href=\"anbieter.css\" type=\"text/css\" rel=\"stylesheet\">
+    <link href=\"";
+        // line 5
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/main.css"), "html", null, true);
+        echo "\" type=\"text/css\" rel=\"stylesheet\">
 </head>
 <body>
 <div class=\"header\">
-    <a href=\"index.html\">
-        <img src=\"./web/Bild1.png\" height=\"150\" width=\"225\">
+    <a href=\"";
+        // line 9
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("homepage");
+        echo "\">
+        <img src=\"";
+        // line 10
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/Bild1.png"), "html", null, true);
+        echo "\" height=\"150\" width=\"225\">
     </a>
     <div class=\"navBar\">
-        <a href=\"index.html\">Home</a>
-        <a class=\"active\" href=\"anbieter.html\">Anbieter</a>
-        <a href=\"leistungen.html\">Zusatzleistungen</a>
-        <a href=\"signup.html\">Partner werden</a>
-        <a href=\"index.html#anchor\">Kontakt</a>
+        <a href=\"";
+        // line 13
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("homepage");
+        echo "\">Home</a>
+        <a class=\"active\" href=\"";
+        // line 14
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("partners");
+        echo "\">Anbieter</a>
+        <a href=\"";
+        // line 15
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("services");
+        echo "\">Zusatzleistungen</a>
+        <a href=\"";
+        // line 16
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("signup");
+        echo "\">Partner werden</a>
+        <a href=\"";
+        // line 17
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("homepage");
+        echo "#anchor\">Kontakt</a>
     </div>
 </div>
 <div class=\"beschreibung\">
@@ -53,7 +77,10 @@ class __TwigTemplate_6c857b5657ed7b9320e7a7a8c2b864d7fd0992dc8e8e1adfb0d5587615c
     <h1>Anbieter</h1>
     <a href=\"nettebad.html\">
         <div class=\"nettebad\">
-            <img src=\"./web/nettebad1.jpg\" height=\"200\">
+            <img src=\"";
+        // line 32
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/nettebad1.jpg"), "html", null, true);
+        echo "\" height=\"200\">
             <span class=\"caption\">
 \t\t\t\t\t<h3>Nettebad</h3>
 \t\t\t\t</span>
@@ -61,7 +88,10 @@ class __TwigTemplate_6c857b5657ed7b9320e7a7a8c2b864d7fd0992dc8e8e1adfb0d5587615c
     </a>
     <a href=\"bauerhorst.html\">
         <div class=\"bauerhorst\">
-            <img src=\"./web/bauerhorst2.jpg\" height=\"200\">
+            <img src=\"";
+        // line 40
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("images/bauerhorst2.jpg"), "html", null, true);
+        echo "\" height=\"200\">
             <span class=\"caption\">
 \t\t\t\t\t<h3>Bauer Horst</h3>
 \t\t\t\t</span>
@@ -79,10 +109,10 @@ class __TwigTemplate_6c857b5657ed7b9320e7a7a8c2b864d7fd0992dc8e8e1adfb0d5587615c
 </body>
 </html>";
         
-        $__internal_33ea76e746664c6693b9c497e00639cff2685ced963f65f2d1a8b2bb3ffe304a->leave($__internal_33ea76e746664c6693b9c497e00639cff2685ced963f65f2d1a8b2bb3ffe304a_prof);
+        $__internal_8e5b2319a3d5e3b9fc8ff6888c8f879eb8b11981bea7add1a40ca557bc95dbf7->leave($__internal_8e5b2319a3d5e3b9fc8ff6888c8f879eb8b11981bea7add1a40ca557bc95dbf7_prof);
 
         
-        $__internal_416a33f26f4aa26b3bf554f6e87d498f16f0c33d7236a625acc54089234001da->leave($__internal_416a33f26f4aa26b3bf554f6e87d498f16f0c33d7236a625acc54089234001da_prof);
+        $__internal_fe9eb496b96940897b39ba5831ffddf527b94dc0aed8f9193df5b56e7b5fe91e->leave($__internal_fe9eb496b96940897b39ba5831ffddf527b94dc0aed8f9193df5b56e7b5fe91e_prof);
 
     }
 
@@ -91,9 +121,14 @@ class __TwigTemplate_6c857b5657ed7b9320e7a7a8c2b864d7fd0992dc8e8e1adfb0d5587615c
         return "AppBundle:Partners:partners.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  25 => 1,);
+        return array (  93 => 40,  82 => 32,  64 => 17,  60 => 16,  56 => 15,  52 => 14,  48 => 13,  42 => 10,  38 => 9,  31 => 5,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -110,19 +145,19 @@ class __TwigTemplate_6c857b5657ed7b9320e7a7a8c2b864d7fd0992dc8e8e1adfb0d5587615c
 <html>
 <head>
     <title>Anbieter</title>
-    <link href=\"anbieter.css\" type=\"text/css\" rel=\"stylesheet\">
+    <link href=\"{{ asset('css/main.css') }}\" type=\"text/css\" rel=\"stylesheet\">
 </head>
 <body>
 <div class=\"header\">
-    <a href=\"index.html\">
-        <img src=\"./web/Bild1.png\" height=\"150\" width=\"225\">
+    <a href=\"{{ path('homepage') }}\">
+        <img src=\"{{ asset('images/Bild1.png') }}\" height=\"150\" width=\"225\">
     </a>
     <div class=\"navBar\">
-        <a href=\"index.html\">Home</a>
-        <a class=\"active\" href=\"anbieter.html\">Anbieter</a>
-        <a href=\"leistungen.html\">Zusatzleistungen</a>
-        <a href=\"signup.html\">Partner werden</a>
-        <a href=\"index.html#anchor\">Kontakt</a>
+        <a href=\"{{ path('homepage') }}\">Home</a>
+        <a class=\"active\" href=\"{{ path('partners') }}\">Anbieter</a>
+        <a href=\"{{ path('services') }}\">Zusatzleistungen</a>
+        <a href=\"{{ path('signup') }}\">Partner werden</a>
+        <a href=\"{{ path('homepage') }}#anchor\">Kontakt</a>
     </div>
 </div>
 <div class=\"beschreibung\">
@@ -137,7 +172,7 @@ class __TwigTemplate_6c857b5657ed7b9320e7a7a8c2b864d7fd0992dc8e8e1adfb0d5587615c
     <h1>Anbieter</h1>
     <a href=\"nettebad.html\">
         <div class=\"nettebad\">
-            <img src=\"./web/nettebad1.jpg\" height=\"200\">
+            <img src=\"{{ asset('images/nettebad1.jpg') }}\" height=\"200\">
             <span class=\"caption\">
 \t\t\t\t\t<h3>Nettebad</h3>
 \t\t\t\t</span>
@@ -145,7 +180,7 @@ class __TwigTemplate_6c857b5657ed7b9320e7a7a8c2b864d7fd0992dc8e8e1adfb0d5587615c
     </a>
     <a href=\"bauerhorst.html\">
         <div class=\"bauerhorst\">
-            <img src=\"./web/bauerhorst2.jpg\" height=\"200\">
+            <img src=\"{{ asset('images/bauerhorst2.jpg') }}\" height=\"200\">
             <span class=\"caption\">
 \t\t\t\t\t<h3>Bauer Horst</h3>
 \t\t\t\t</span>
